@@ -8,30 +8,69 @@
 </head>
 
 <body>
-    <header class>
-        <a class id >View high scores</a>
-        <section class>
-            Time: 0 seconds
-        </section>
+
+    <header class="score-timer">
+
+        <a class="score" id="score link" >View high scores</a>
+        <span class="timer" id="time"></span>
+    
     </header>
     
-    <main class >
-        <nav class>
-            <h1>
-                Coding Quiz challenge
-            </h1>
-        </nav>
+    <main>
+        
+        <section class="container">
+            
+            <div class="question-container"> 
+                <div class="in-content">
+                    <h1 class="question" id="question-change">Coding Quiz Challenge</h1>
+                        <hr class="division-line">                  
+                        
+                        <section class="multi-answer">        
+                                <div class="left-side"></div>
 
-        <section class="content">
-            <h2>
-            Try to answer the following code-related questions within the time limit. Keep in mind that incorrect answers will penalize your time by reducing it by ten seconds.</section>
-            </h2>
-            <button id="start">Start Quiz</button>
+                                    <div class="right-side">                           
+                                    
+                                        <section id="principal-content">                             
+                                        
+                                            <h5 class=title>
+                                            Try to answer the following code-related questions within the time limit. Keep in mind that incorrect answers will penalize your time by reducing it by ten seconds.                              
+                                            </h5>
+                                
+                                            <div class="startButton">
+                                                <button type="submit" id="startquiz" class="btn">Start Quiz</button>
+                                            </div>
+                                
+                                        </section>
+                            
+                            
+                                    <!-- result -->
+
+                                    <div id = "quizquestion"></div>
+                                    <div id = "userscore"></div>
+                                    <div id = "userhighscores"> </div>  
+                                
+                                    
+                        
+                                </div>
+                        
+                        </section>                                     
+                    
+                        <section id="userselection">
+                            
+                            <hr class="-division-line">
+                        
+                        </section>    
+                
+                </div>
+            
+            </div>                     
+        
         </section>
-
+        
     </main>
     
-    <footer class></footer>
-    <script src="./assets/js/script.js"></script>
-</body>
+    
+        <script src="./assets/js/script.js"></script>
+    </body>
+    
 </html>

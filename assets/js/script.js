@@ -73,3 +73,66 @@ var userQuestions = [
     },
 
 ];
+
+totalQuestions = userQuestions.length;
+var timer = document.querySelector("#timer"); 
+var scoreLink = document.querySelector("scorelink");
+var principalContent = document.querySelector("#principal-content"); 
+var questionSwitch = document.getElementById("question-change");
+var quizQuestion = document.querySelector("#quizquestion");
+var userSelection = document.querySelector("#userselection");
+var userScore = document.querySelector("#userscore");
+var userHighScore = document.querySelector("#userhighscores");
+var score = document.getElementById("scorelink");
+var startButton = document.getElementById("startquiz")
+
+// starts test
+
+function start() {
+    timer();
+    question();
+}
+
+function timer() {
+    
+    var interval = setInterval(function () {
+        
+        timeLeft--;
+
+        timer.textContent = "Time : " + timeLeft;
+        
+        if (timeLeft <= 0 || (questionIndex > totalQuestions - 1)) {
+            
+            userSelection.style.display = "none";
+            quizQuestion.style.display = "none";
+            result();
+            clearInterval(interval);
+            timer.textContent = "";
+        }
+
+    }, 1000);
+
+}
+        
+
+
+for (var i = 0; i < 4; i++) {
+    
+    var buttonDiv = document.createElement("div");
+    var selectionButtons = document.createElement("button");
+    selectionButtons.setAttribute("data-index", i);
+    selectionButtons.setAttribute("class", "btnn");
+    selectionArray.push(buttonDiv);
+    buttonArray.push(selectionButtons);
+}
+
+
+// display of correct or incorrect answers
+
+var correctIncorrect = document.createElement("p");
+correctIncorrect.setAttribute("class", "right-wrong");
+userSelection.appendChild(correctIncorrect);
+
+
+//start quiz button
+startButton.addEventListener("click",startChallenge);
