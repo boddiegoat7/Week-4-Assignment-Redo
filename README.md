@@ -2,7 +2,7 @@
 
 ## TABLE OF CONTENTS
   - [DESCRIPTION](#description)
-  - [Usage](#usage)
+  - [USAGE](#usage)
   - [LICENSE](#license)
   - [CONTRIBUTE](#contribute)
   - [TEST](#test)
