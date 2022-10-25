@@ -1,76 +1,96 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Boddie Quiz</title>
-</head>
-
-<body>
-
-    <header class="score-timer">
-
-        <a class="score" id="score link" >View high scores</a>
-        <span class="timer" id="time"></span>
+<!DOCTYPE html> 
+    <html lang="en-us"> 
+                <head>
+                    <meta charset="UTF-8" />
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+                    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+                    <title> The Boddie Code Quiz</title>
+                    <link rel="stylesheet" href="./assets/css/style.css" />
+                </head> 
     
-    </header>
+                <body>
     
-    <main>
+                    <header>   
         
-        <section class="container">
-            
-            <div class="question-container"> 
-                <div class="in-content">
-                    <h1 class="question" id="question-change">Coding Quiz Challenge</h1>
-                        <hr class="division-line">                  
-                        
-                        <section class="multi-answer">        
-                                <div class="left-side"></div>
-
-                                    <div class="right-side">                           
-                                    
-                                        <section id="principal-content">                             
-                                        
-                                            <h5 class=title>
-                                            Try to answer the following code-related questions within the time limit. Keep in mind that incorrect answers will penalize your time by reducing it by ten seconds.                              
-                                            </h5>
-                                
-                                            <div class="startButton">
-                                                <button type="submit" id="startquiz" class="btn">Start Quiz</button>
-                                            </div>
-                                
-                                        </section>
-                            
-                            
-                                    <!-- result -->
-
-                                    <div id = "quizquestion"></div>
-                                    <div id = "userscore"></div>
-                                    <div id = "userhighscores"> </div>  
-                                
-                                    
-                        
-                                </div>
-                        
-                        </section>                                     
-                    
-                        <section id="userselection">
-                            
-                            <hr class="-division-line">
-                        
-                        </section>    
+                        <nav class="score-timer">  
                 
-                </div>
+                            <a class="score" id = "scorelink" >View High Scores</a>
+                
+                            <span class="timeprop" id="timer"></span>
+        
+                        </nav>
+    
+                    </header>
+    
+                    <main>    
+
+        
+                        <section class="container">
             
-            </div>                     
+                            <div class="question-container"> 
+                
+                                <div class="in-content">
+                    
+                                    <h1 class="question" id="question-change">Coding Quiz Challenge</h1>
+                    
+                                    <hr class="division-line">                  
+                    
+                                    <section class="multi-answer">        
+                        
+                                        <div class="left-side">
+                        
+                                        </div>
+                        
+                                        <div class="right-side">                           
+                            
+                                            <section id="principal-content">                             
+                                
+                                                <h5 class=title>
+
+                                                    Try to answer the following code-related questions within the time limit.
+                                                    Incorrect answers will penalize your score/time by 10 points/secounds.
+                            
+                                                </h5>                              
+                                
+                                                <div class="startButton">
+                                    
+                                                    <button type="submit" id="startquiz" class="btn">Start Quiz</button>
+                                
+                                                </div>
+                            
+                                            </section>
+                            
+                            
+                            
+                                            <div id = "quizquestion"></div>
+                            
+                                            <div id = "userscore"></div>
+                            
+                                            <div id = "userhighscores"> </div>                       
+                        
+                                        </div>
+                    
+                                    </section>                                     
+                    
+                                    <section id="userselection">
+                        
+                                        <hr class="-division-line">
+                    
+                                    </section>    
+                
+                                </div>
+            
+                            </div>                     
         
-        </section>
+                        </section>
         
-    </main>
     
+                    </main>
+
     
-        <script src="./assets/js/script.js"></script>
-    </body>
+                    <script src="./assets/js/script.js"></script>
     
-</html>
+                </body>
+    
+
+    </html>
